@@ -16,8 +16,8 @@ export default function TodoPage(props) {
   const [sorting, setSorting] = useState(sortData[0])
 
   return (
-   <Flex flexWrap={'wrap'}>
-     <Box width={[1, 1/2, 1/3]} p={4} style={{ background: '#F5F5F5', borderRadius: '10px' }}>
+   <Flex flexWrap={'wrap'} justifyContent='center'>
+     <Box width={[1, 1/1.5, 1/2]} p={4} my={[0, 4, 4]} style={{ background: '#F5F5F5', borderRadius: '10px' }}>
        <ProgressBar data={list} />
        <Flex flexWrap={'wrap'} my={3} alignItems={'center '}>
         <Box width={2/3}><h1>Tasks</h1></Box>
