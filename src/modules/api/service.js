@@ -37,3 +37,14 @@ export function create(data) {
     data,
   })
 }
+
+export function update({id, data}) {
+  return repository.updateAPI({
+    path: `/todos/${id}`,
+    data,
+  })
+}
+
+export function remove(id) {
+  return repository.deleteAPI({ path: `/todos/${id}` })
+}
