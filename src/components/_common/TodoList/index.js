@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import * as ApiService from '../../../../src/modules/api/service'
 import TodoItem from './TodoItem'
 
@@ -24,15 +24,6 @@ export default function TodoList(props) {
     const result =  await ApiService.remove(id)
     setList(list.filter(item => item.id !== id))
   }
-
-
-  // useEffect(() => {
-  //   onUpdateData()
-  // }, [list])
-
-  // Context 
-  // handleError
-  // Notice before remove
 
   return <div style={{
     display: 'flex',
